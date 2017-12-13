@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Apuestas Online</string>
+    <string name="registro">Registro</string>
+    <string name="apuestas">Apuestas</string>
+    <string name="ajustes">Ajustes</string>
+    <string name="sorteo">Sorteo</string>
+    <string name="textview">Apuestas Online</string>
+    <string name="online">Online</string>
+    <string name="online_bets">Apuestas</string>
+    <string name="str_dinero_apostar">Dinero Apostar</string>
+</resources>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_green_dark"
+    tools:context="com.example.zasha.apuestas.Apuestas">
+
+    <TextView
+        android:id="@+id/textView_apuestas"
+        android:layout_width="0dp"
+        android:layout_height="43dp"
+        android:background="#486c00"
+        android:text="@string/apuestas"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView_futbol"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/textView_apuestas"
+        app:srcCompat="@drawable/football" />
+
+    <ImageView
+        android:id="@+id/imageView_tenis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_balonmano"
+        app:srcCompat="@drawable/tennis" />
+
+    <ImageView
+        android:id="@+id/imageView_baloncesto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_futbol"
+        app:srcCompat="@drawable/basket" />
+
+    <ImageView
+        android:id="@+id/imageView_balonmano"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/textView_apuestas"
+        app:srcCompat="@drawable/handball" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <CheckBox
+        android:id="@+id/checkBox_futbol"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="48dp"
+        android:checked="false"
+        android:text="@string/football"
+        app:layout_constraintEnd_toStartOf="@+id/imageView_futbol"
+        app:layout_constraintTop_toBottomOf="@+id/textView_apuestas" />
+
+    <CheckBox
+        android:id="@+id/checkBox_tenis"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/tennis"
+        app:layout_constraintStart_toEndOf="@+id/imageView_tenis"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_balonmano" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/basket"
+        app:layout_constraintEnd_toStartOf="@+id/imageView_baloncesto"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_futbol" />
+
+    <CheckBox
+        android:id="@+id/checkBox_balonmano"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/handball"
+        app:layout_constraintStart_toEndOf="@+id/imageView_balonmano"
+        app:layout_constraintTop_toBottomOf="@+id/textView_apuestas" />
+
+    <Button
+        android:id="@+id/button_aceptar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:text="@string/aceptar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2" />
+
+    <Button
+        android:id="@+id/button_volver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:text="@string/volver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2" />
+
+</android.support.constraint.ConstraintLayout>

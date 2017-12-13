@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Online Bets</string>
+    <string name="textview">Online Bets</string>
+    <string name="registro">Register</string>
+    <string name="apuestas">Bets</string>
+    <string name="ajustes">Config</string>
+    <string name="sorteo">Lot</string>
+    <string name="online_bets">Bets</string>
+    <string name="online">Online</string>
+    <string name="registro2">Registro</string>
+    <string name="nombre">Nombre</string>
+    <string name="email">Email</string>
+    <string name="fecha_de_nacimiento_dd_mm_aaaa">Fecha de nacimiento (dd/mm/aaaa)</string>
+    <string name="volver">Volver</string>
+    <string name="validar">Validar</string>
+    <string name="football">Football</string>
+    <string name="handball">Handball</string>
+    <string name="basket">Basket</string>
+    <string name="tennis">Tennis</string>
+    <string name="todo">TODO</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="str_dinero_apostar">Dinero Apostar</string>
+</resources>
