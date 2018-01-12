@@ -1,4 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Online Bets</string>
+    <string name="msg_error_edad">You must have 18 years or more to use this app</string>
+    <string name="msg_error_campos_vacios">All fields must be complete</string>
+    <string name="msg_error_formato_fecha">DateFormat are not valid</string>
+    <string name="login_ok">Login OK!</string>
+    <string name="msg_registrate">Login First</string>
+    <string name="msg_apuesta_guardada">"Bet save : "</string>
+    <string name="guardar">Save</string>
+    <string name="dinero">Money</string>
+    <string name="numero1">Number 1</string>
+    <string name="numero2">Number 2</string>
+    <string name="aceptar">OK</string>
+    <string name="out">Not work yet</string>
+    <string name="textview">Online Bets</string>
+    <string name="registro">Register</string>
+    <string name="apuestas">Bets</string>
+    <string name="ajustes">Settings</string>
+    <string name="sorteo">Lot</string>
+    <string name="online_bets">Bets</string>
+    <string name="online">Online</string>
+    <string name="nombre">Name</string>
+    <string name="email">Email</string>
+    <string name="fecha_de_nacimiento_dd_mm_aaaa">Birthday</string>
+    <string name="volver">Back</string>
+    <string name="validar">Confirm</string>
+    <string name="football">Football</string>
+    <string name="handball">Handball</string>
+    <string name="basket">Basket</string>
+    <string name="tennis">Tennis</string>
+    <string name="todo">ALL</string>
+    <string name="str_dinero_apostar">Bet money</string>
+    <string name="registro2">Register</string>
 </resources>

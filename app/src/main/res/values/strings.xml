@@ -20,4 +20,15 @@
     <string name="todo">TODO</string>
     <string name="aceptar">Aceptar</string>
     <string name="str_dinero_apostar">Dinero Apostar</string>
+    <string name="out">No funciona en estos momentos</string>
+    <string name="msg_error_edad">Tienes que tener 18 o mas años para usar la aplicación</string>
+    <string name="msg_error_campos_vacios">No puede haber campos vacios</string>
+    <string name="msg_error_formato_fecha">El formato de la fecha no es valido</string>
+    <string name="login_ok">Acceso Correcto</string>
+    <string name="msg_registrate">Registrate Primero</string>
+    <string name="msg_apuesta_guardada">Apuesta Guardada:</string>
+    <string name="guardar">Guardar</string>
+    <string name="dinero">Dinero</string>
+    <string name="numero1">Numero 1</string>
+    <string name="numero2">Numero 2</string>
 </resources>

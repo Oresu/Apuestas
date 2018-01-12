@@ -30,6 +30,6 @@ public class DataPickerFragment extends DialogFragment implements DatePickerDial
 
     @Override
     public void onDateSet(DatePicker datePicker, int i, int i1, int i2) {
-        campo.setText(i + "-" + (il + 1) + "-"+  i2 );
+        campo.setText(i + "/" + (il + 1) + "/"+  i2 );
     }
 }

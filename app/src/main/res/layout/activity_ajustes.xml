@@ -1,32 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<linearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.zasha.apuestas.Ajustes">
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="49dp"
-        android:layout_marginBottom="44dp"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="45dp" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="45dp"
-        android:text="Button"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="427dp" />
+    android:layout_height="match_parent">
 
     <TabHost
-        android:layout_width="384dp"
-        android:layout_height="418dp">
+        android:id="@+id/TabsHost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -43,56 +25,127 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <LinearLayout
-                    android:id="@+id/tab1"
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/tabdinero"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/textView4"
-                        android:layout_width="match_parent"
+                        android:id="@+id/textdinero"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/str_dinero_apostar" />
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/dinero"
+                        app:layout_constraintBottom_toTopOf="@+id/spinnerapuesta"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
 
                     <Spinner
-                        android:id="@+id/spinner2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+                        android:id="@+id/spinnerapuesta"
+                        android:layout_width="67dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_height="36dp"
+                        android:layout_marginBottom="344dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.501"
+                        app:layout_constraintStart_toStartOf="parent" />
 
-                </LinearLayout>
+                    <Button
+                        android:id="@+id/botonguardar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/guardar"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/botonvolver"
+                        app:layout_constraintHorizontal_bias="0.266"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.416" />
+
+                    <Button
+                        android:id="@+id/botonvolver"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="52dp"
+                        android:text="@string/volver"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/botonguardar"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                </android.support.constraint.ConstraintLayout>
 
                 <LinearLayout
-                    android:id="@+id/tab2"
+                    android:id="@+id/tabcombinacion"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/textView5"
-                        android:layout_width="match_parent"
+                        android:id="@+id/partidos"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
                         android:text="TextView" />
 
-                    <EditText
-                        android:id="@+id/txtPartido1"
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="textPersonName"
-                        android:text="Name" />
+                        android:layout_height="43dp"
+                        android:orientation="horizontal">
 
-                    <EditText
-                        android:id="@+id/txtPartido2"
+                        <EditText
+                            android:id="@+id/textnumero1"
+                            android:layout_width="94dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="65dp"
+                            android:hint="@string/numero1"
+                            android:inputType="number" />
+
+                        <EditText
+                            android:id="@+id/textnumero2"
+                            android:layout_width="94dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="65dp"
+                            android:hint="@string/numero2"
+                            android:inputType="number" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="textPersonName"
-                        android:text="Name" />
+                        android:layout_height="46dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/botonguardar2"
+                            android:layout_width="123dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="65dp"
+                            android:text="@string/guardar" />
+
+                        <Button
+                            android:id="@+id/botonvolver2"
+                            android:layout_width="123dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:text="@string/volver" />
+                    </LinearLayout>
+
                 </LinearLayout>
 
             </FrameLayout>
         </LinearLayout>
     </TabHost>
-
-</linearLayout>
+</LinearLayout>
