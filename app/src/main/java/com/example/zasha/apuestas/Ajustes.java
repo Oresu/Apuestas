@@ -27,8 +27,8 @@ public class Ajustes extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ajustes);
 
-        texto_num1 =  findViewById(R.id.textnumero1);
-        texto_num2 =  findViewById(R.id.textnumero2);
+        texto_num1 = findViewById(R.id.textnumero1);
+        texto_num2 = findViewById(R.id.textnumero2);
 
         partidos = findViewById(R.id.partidos);
 
@@ -36,7 +36,7 @@ public class Ajustes extends AppCompatActivity {
 
         switch (deporte) {
             case R.string.football:
-                partidos.setText("Real Madrid - Mierda Barcelona");
+                partidos.setText("Real Madrid - Barcelona");
                 break;
             case R.string.tennis:
                 partidos.setText("Nadal - Ferrer");
@@ -57,6 +57,7 @@ public class Ajustes extends AppCompatActivity {
                 guardar();
             }
         });
+
         Button btguardar2 = (Button) findViewById(R.id.botonguardar2);
         btguardar2.setOnClickListener(new View.OnClickListener() {
 
@@ -65,6 +66,7 @@ public class Ajustes extends AppCompatActivity {
                 guardar();
             }
         });
+
         Button btvolver = (Button) findViewById(R.id.botonvolver);
         btvolver.setOnClickListener(new View.OnClickListener() {
 
@@ -73,6 +75,7 @@ public class Ajustes extends AppCompatActivity {
                 finish();
             }
         });
+
         Button btvolver2 = (Button) findViewById(R.id.botonvolver2);
         btvolver2.setOnClickListener(new View.OnClickListener() {
 
@@ -108,7 +111,7 @@ public class Ajustes extends AppCompatActivity {
 
     public void guardar() {
         boolean comprobar = true;
-        if (texto_num1.getText().toString().equals("")||texto_num2.getText().toString().equals("")) {
+        if (texto_num1.getText().toString().equals("") || texto_num2.getText().toString().equals("")) {
             comprobar = false;
             Toast.makeText(getApplicationContext(), "No son numeros algunos valores",
                     Toast.LENGTH_SHORT).show();

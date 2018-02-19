@@ -6,7 +6,7 @@
     <string name="msg_error_formato_fecha">DateFormat are not valid</string>
     <string name="login_ok">Login OK!</string>
     <string name="msg_registrate">Login First</string>
-    <string name="msg_apuesta_guardada">"Bet save : "</string>
+    <string name="msg_apuesta_guardada">"Bet save: "</string>
     <string name="guardar">Save</string>
     <string name="dinero">Money</string>
     <string name="numero1">Number 1</string>

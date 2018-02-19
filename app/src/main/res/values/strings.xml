@@ -10,7 +10,7 @@
     <string name="registro2">Registro</string>
     <string name="nombre">Nombre</string>
     <string name="email">Email</string>
-    <string name="fecha_de_nacimiento_dd_mm_aaaa">Fecha de nacimiento (dd/mm/aaaa)</string>
+    <string name="fecha_de_nacimiento_dd_mm_aaaa">Birthday (dd/mm/aaaa)</string>
     <string name="volver">Volver</string>
     <string name="validar">Validar</string>
     <string name="football">Football</string>
@@ -18,17 +18,90 @@
     <string name="basket">Basket</string>
     <string name="tennis">Tennis</string>
     <string name="todo">TODO</string>
-    <string name="aceptar">Aceptar</string>
-    <string name="str_dinero_apostar">Dinero Apostar</string>
-    <string name="out">No funciona en estos momentos</string>
-    <string name="msg_error_edad">Tienes que tener 18 o mas años para usar la aplicación</string>
-    <string name="msg_error_campos_vacios">No puede haber campos vacios</string>
-    <string name="msg_error_formato_fecha">El formato de la fecha no es valido</string>
-    <string name="login_ok">Acceso Correcto</string>
-    <string name="msg_registrate">Registrate Primero</string>
-    <string name="msg_apuesta_guardada">Apuesta Guardada:</string>
-    <string name="guardar">Guardar</string>
-    <string name="dinero">Dinero</string>
-    <string name="numero1">Numero 1</string>
-    <string name="numero2">Numero 2</string>
+    <string name="aceptar">OK</string>
+    <string name="str_dinero_apostar">Bet Money</string>
+    <string name="out">Not work yet</string>
+    <string name="msg_error_edad">You must have 18 years or more to use this app</string>
+    <string name="msg_error_campos_vacios">All fields must be complete</string>
+    <string name="msg_error_formato_fecha">DateFormat are not valid</string>
+    <string name="login_ok">Login OK!</string>
+    <string name="msg_registrate">Login First</string>
+    <string name="msg_apuesta_guardada">"Bet Save: "</string>
+    <string name="guardar">Save</string>
+    <string name="dinero">Money</string>
+    <string name="numero1">Number 1</string>
+    <string name="numero2">Number 2</string>
+    <string name="title_activity_preferencias">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
 </resources>
